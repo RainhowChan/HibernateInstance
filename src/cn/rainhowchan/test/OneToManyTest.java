@@ -3,8 +3,8 @@ package cn.rainhowchan.test;
 import org.hibernate.Session;
 import org.junit.Test;
 
-import cn.rainhowchan.onetomany.User;
 import cn.rainhowchan.onetomany.Order;
+import cn.rainhowchan.onetomany.User;
 import cn.rainhowchan.utils.HibernateUtils;
 
 public class OneToManyTest {
@@ -13,7 +13,7 @@ public class OneToManyTest {
 	public void test1(){
 		Session session = HibernateUtils.getSession();
 		session.beginTransaction();
-		
+	
 		User customer = new User();
 		customer.setName("уехЩ");
 		
